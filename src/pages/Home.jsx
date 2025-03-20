@@ -57,7 +57,7 @@ function Home() {
                 <CTAButton active={true} linkto={"/signup"}>
                     Learn More
                 </CTAButton>
-                <CTAButton active={false} linkto={"/login"} >Book a Demo</CTAButton>
+                
             </div>
 
             <div className='mx-3 my-12 shadow-blue-200 w-[70%] relative'>
@@ -104,21 +104,10 @@ function Home() {
                 backgroudGradient={"grad"}
             />
         </div>
-        <div className=' mx-auto box-content w-full max-w-maxContentTab px- py-12 lg:max-w-maxContent'>
-        <h2 className='section_heading mb-6 md:text-3xl text-xl'>
-           Most Popular Courses
-        </h2>
-        <CourseSlider Courses={CatalogPageData?.selectedCourses}/>
-      </div>       
-        <div className=' mx-auto box-content w-full max-w-maxContentTab px- py-12 lg:max-w-maxContent'>
-        <h2 className='section_heading mb-6 md:text-3xl text-xl'>
-           Students are learning
-        </h2>
-        <CourseSlider Courses={CatalogPageData?.differentCourses}/>
-      </div>       
+              
 
 
-                {/* Code Section 2 */}
+               
         <div>
             <CodeBlocks 
                 position={"lg:flex-row-reverse"}
@@ -153,68 +142,14 @@ function Home() {
         </div>
 
 
-        <ExploreMore/>
+    
 
 
         </div>
         <div className='hidden lg:block lg:h-[200px]'></div>
 
 
-        <div className='bg-pure-greys-5 text-richblack-700'>
-            <div className='homepage_bg h-[310px]'>
-
-                <div className='w-11/12 max-w-maxContent flex flex-col items-center justify-between gap-5 mx-auto'>
-                    <div className='h-[150px]'></div>
-                    <div className='flex flex-row gap-7 text-white '>
-                        <CTAButton active={true} linkto={"/catalog/Web Developement"}>
-                            <div className='flex items-center gap-3' >
-                                Explore Full Catalog
-                                <FaArrowRight />
-                            </div>
-                            
-                        </CTAButton>
-                        <CTAButton active={false} linkto={"/signup"}>
-                            <div>
-                                Learn more
-                            </div>
-                        </CTAButton>
-                    </div>
-
-                </div>
-
-
-            </div>
-
-            <div className='mx-auto w-11/12 max-w-maxContent flex flex-col items-center justify-between gap-7'>
-
-                <div className='flex flex-row gap-5 mb-10 mt-[95px]'>
-                    <div className='text-4xl font-semibold w-[45%]'>
-                        Get the Skills you need for a
-                        <HighlightText text={"Job that is in demand"} />
-                    </div>
-
-                    <div className='flex flex-col gap-10 w-[40%] items-start'>
-                    <div className='text-[16px]'>
-                    The modern StudyNotion is the dictates its own terms. Today, to be a competitive specialist requires more than professional skills.
-                    </div>
-                    <CTAButton active={true} linkto={"/signup"}>
-                        <div>
-                            Learn more
-                        </div>
-                    </CTAButton>
-                    </div>
-
-                </div>
-                
-                
-
-                <TimelineSection />
-
-                <LearningLanguageSection />
-
-            </div>
-      </div>
-
+      
 
 
        <div className='w-11/12 mx-auto max-w-maxContent flex-col items-center justify-between gap-8 first-letter bg-richblack-900 text-white'>
@@ -224,8 +159,7 @@ function Home() {
             {/* Review Slider here */}
       </div>
       <div className=' mb-16 mt-3'>
-        <h2 className='text-center text-2xl md:text-4xl font-semibold mt-8 text-richblack-5 mb-5'>Reviews from other learners</h2>
-        <RatingSlider />
+        
       </div>
     </div>
   )
